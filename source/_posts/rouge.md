@@ -1,14 +1,15 @@
 
 ---
-title:  红    
+title:  Rouge    
 date:   2022-06-15 03:31:04
 tags:    
-   - a
-   - b   
+   - 电影
+   - 分享
 categories: 
-   - a
-keywords:  // 关键字
-description: // 在主页描述、若不选自动节选
+   - 日常
+   - 电影
+   - 赏析
+
 ---
 
 
