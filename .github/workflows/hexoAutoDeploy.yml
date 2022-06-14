@@ -1,4 +1,5 @@
-name: hexo deploy
+name: Hexo Deploy Automatically
+
 
 on:
   push:
@@ -9,29 +10,34 @@ on:
     branches:
       - hexo
 
+
 jobs:
-  deploy:
+  build:
+
     runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [12.x]
+
     steps:
-      - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2
-      - uses: actions/setup-node@v3
+      - name: Checkout
+        uses: actions/checkout@v2
+        
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
         with:
-          node-version: 14.x
-          cache: npm
-
-      - name: Install
-        run: npm install
-
-     
-
-      - name: Build
-        run: npm run build
-
+          node-version: ${{ matrix.node-version }}
+      
+      - name: Generate
+        run: |
+          npm i && npx hexo g
+      
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
           publish_branch: master
+          publish_dir: ./public
+          cname: blog.ichr.me
           force_orphan: true
