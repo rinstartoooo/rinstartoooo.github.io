@@ -1,0 +1,39 @@
+
+avatar:
+  url: /images/dogg1.jpg
+  rounded: true
+
+social:
+  - name: GitHub
+    link: https://github.com/rinstartoooo
+    icon: ri:github-line
+    color: '#181717'
+  - name: 豆瓣
+    link: https://douban.com/people/169873101/?_i=5193629fs9agvF
+    icon: ri:douban-line
+    color: '#007722'
+
+  - name: Twitter
+    link: https://twitter.com/isildur_e
+    icon: ri:twitter-line
+    color: '#1da1f2'
+
+banner:
+  enable: true
+  title: PerfectBlue
+  border: true
+  cloud:
+    enable: true
+    color: white
+  go_down:
+    enable: true
+    icon: ri:arrow-down-s-line
+notice:
+  enable: true
+  content: Welcome to my web.
+
+say:
+  enable: true
+  api: /data/sentences.json
+  hitokoto:
+    enable: false
