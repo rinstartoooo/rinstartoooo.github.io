@@ -2,14 +2,14 @@
 title: rouge
 date: 2022-06-15 03:31:04
 tags:
- - film
- - 分享
+  - film
+  - 分享
 
- categories:
- - 电影赏析
+categories:
+  - 电影赏析
  ---
 
-# 红白蓝之红ROUGE
+# 红白蓝之红 ROUGE
 
 ## 简介
 
