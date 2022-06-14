@@ -1,13 +1,16 @@
----
-title: rouge
-date: 2022-06-15 03:31:04
-tags:
-  - film
-  - 分享
 
-categories:
-  - 电影赏析
- ---
+---
+title:  红    
+date:   2022-06-15 03:31:04
+tags:    
+   - a
+   - b   
+categories: 
+   - a
+keywords:  // 关键字
+description: // 在主页描述、若不选自动节选
+---
+
 
 # 红白蓝之红 ROUGE
 
